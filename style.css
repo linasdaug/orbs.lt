@@ -1,0 +1,387 @@
+@import url("normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	background: #333344;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.explain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #aaa;
+  width: 25%;
+}
+
+.explain h1 {
+  font-family: "Roboto";
+  font-size: 4em;
+  border-bottom: 1px solid #aaa;
+  padding: 0.5em;
+}
+
+.explain p {
+  font-family: "Roboto";
+  font-size: 1em;
+  letter-spacing: 0.2em;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes orbup {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes orbup {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes orbup {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes orbdown {
+    0% {
+        margin-bottom: 1000px;
+    }
+    100% {
+        margin-bottom: -100%;
+    }
+}
+
+@-moz-keyframes orbdown {
+    0% {
+        margin-bottom: 1000px;
+    }
+    100% {
+        margin-bottom: -100%;
+    }
+}
+
+@keyframes orbdown {
+    0% {
+        margin-bottom: 1000px;
+    }
+    100% {
+        margin-bottom: -100%;
+    }
+}
+
+
+@-webkit-keyframes sideorb {
+    0% {
+        margin-left: 1000px;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@-moz-keyframes sideorb {
+    0% {
+        margin-left: 1000px;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@keyframes sideorb {
+    0% {
+        margin-left: 1000px;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@-webkit-keyframes diagon {
+    0% {
+        margin-left: 1000px;
+        margin-bottom: 900px;
+    }
+    100% {
+        margin-left: -100%;
+        margin-bottom: -80%;
+    }
+}
+
+@-moz-keyframes diagon {
+  0% {
+      margin-left: 1000px;
+      margin-bottom: 900px;
+  }
+  100% {
+      margin-left: -100%;
+      margin-bottom: -80%;
+  }
+}
+
+@keyframes diagon {
+  0% {
+      margin-left: 1000px;
+      margin-bottom: 900px;
+  }
+  100% {
+      margin-left: -100%;
+      margin-bottom: -80%;
+  }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: orbup 45s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: orbup 45s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: orbup 45s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 5%;
+	top: 5%;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x2 {
+    -webkit-animation: orbup 40s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: orbup 40s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: orbup 40s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 5%;
+	top: 80%;
+
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: orbdown 38s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: orbdown 38s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: orbdown 38s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 10%;
+	bottom: 40%;
+
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: orbdown 53s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: orbdown 53s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: orbdown 53s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 20%;
+	bottom: 0;
+
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+}
+
+.x5 {
+    -webkit-animation: orbdown 49s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: orbdown 49s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: orbdown 49s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 30%;
+	bottom: 50%;
+
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.x6 {
+    -webkit-animation: diagon 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: diagon 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: diagon 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 50%;
+	bottom: 10%;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: sideorb 65s linear infinite;
+	-moz-animation: sideorb 65s linear infinite;
+	animation: sideorb 65s linear infinite;
+
+	left: 65%;
+	bottom: 70%;
+
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.x8 {
+    -webkit-animation: diagon 121s linear infinite alternate;
+	-moz-animation: diagon 121s linear infinite alternate;
+	animation: diagon 121s linear infinite alternate;
+
+	left: 80%;
+	bottom: 10%;
+
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.x9 {
+    -webkit-animation: orbup 59s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: orbup 59s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: orbup 59s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 90%;
+	top: 50%;
+
+	-webkit-transform: scale(2.6);
+	-moz-transform: scale(2.6);
+	transform: scale(2.6);
+}
+
+.x10 {
+    -webkit-animation: orbdown 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: orbdown 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: orbdown 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 80%;
+	bottom: 80%;
+
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.x11 {
+  -webkit-animation: sideorb 46s linear infinite;
+-moz-animation: sideorb 46s linear infinite;
+animation: sideorb 46s linear infinite;
+
+left: 80%;
+top: 40%;
+
+-webkit-transform: scale(0.8);
+-moz-transform: scale(0.8);
+transform: scale(0.8);
+
+}
+
+.x12 {
+    -webkit-animation: diagon 25s linear infinite;
+	-moz-animation: diagon 25s linear infinite;
+	animation: diagon 25s linear infinite;
+
+	left: 20%;
+	bottom: 20%;
+
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+
+/* OBJECTS */
+
+.orbb {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.orbb:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+
+	content: "";
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
