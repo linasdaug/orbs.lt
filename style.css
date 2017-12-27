@@ -27,6 +27,7 @@ body {
   text-align: center;
   color: #aaa;
   width: 25%;
+	min-width: 400px;
 }
 
 .explain h1 {
@@ -46,7 +47,7 @@ body {
 
 @-webkit-keyframes orbup {
     0% {
-        margin-top: 1000px;
+        margin-top: 900px;
     }
     100% {
         margin-top: -100%;
@@ -55,7 +56,7 @@ body {
 
 @-moz-keyframes orbup {
     0% {
-        margin-top: 1000px;
+        margin-top: 900px;
     }
     100% {
         margin-top: -100%;
@@ -64,7 +65,7 @@ body {
 
 @keyframes orbup {
     0% {
-        margin-top: 1000px;
+        margin-top: 900px;
     }
     100% {
         margin-top: -100%;
@@ -164,7 +165,7 @@ body {
         margin-left:0px;
     }
     100% {
-        margin-left:50px;
+        margin-left:200px;
     }
 }
 
@@ -173,7 +174,7 @@ body {
         margin-left:0px;
     }
     100% {
-        margin-left:50px;
+        margin-left:200px;
     }
 }
 
@@ -182,16 +183,14 @@ body {
         margin-left:0px;
     }
     100% {
-        margin-left:50px;
+        margin-left:200px;
     }
 }
 
-/* ANIMATIONS */
-
 .x1 {
-    -webkit-animation: orbup 45s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: orbup 45s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: orbup 45s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -webkit-animation: orbup 45s linear infinite, sideWays 12s ease-in-out infinite alternate;
+	-moz-animation: orbup 45s linear infinite, sideWays 12s ease-in-out infinite alternate;
+	animation: orbup 45s linear infinite, sideWays 12s ease-in-out infinite alternate;
 
 	left: 5%;
 	top: 5%;
@@ -202,9 +201,9 @@ body {
 }
 
 .x2 {
-    -webkit-animation: orbup 40s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: orbup 40s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: orbup 40s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation: orbup 40s linear infinite, sideWays 14s ease-in-out infinite alternate;
+	-moz-animation: orbup 40s linear infinite, sideWays 14s ease-in-out infinite alternate;
+	animation: orbup 40s linear infinite, sideWays 14s ease-in-out infinite alternate;
 
 	left: 5%;
 	top: 80%;
@@ -215,9 +214,9 @@ body {
 }
 
 .x3 {
-    -webkit-animation: orbdown 38s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: orbdown 38s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: orbdown 38s linear infinite, sideWays 2s ease-in-out infinite alternate;
+  -webkit-animation: orbdown 38s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	-moz-animation: orbdown 38s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	animation: orbdown 38s linear infinite, sideWays 5s ease-in-out infinite alternate;
 
 	left: 10%;
 	bottom: 40%;
@@ -228,7 +227,7 @@ body {
 }
 
 .x4 {
-    -webkit-animation: orbdown 53s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  -webkit-animation: orbdown 53s linear infinite, sideWays 3s ease-in-out infinite alternate;
 	-moz-animation: orbdown 53s linear infinite, sideWays 3s ease-in-out infinite alternate;
 	animation: orbdown 53s linear infinite, sideWays 3s ease-in-out infinite alternate;
 
@@ -241,9 +240,9 @@ body {
 }
 
 .x5 {
-    -webkit-animation: orbdown 49s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: orbdown 49s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: orbdown 49s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation: orbdown 49s linear infinite, sideWays 10s ease-in-out infinite alternate;
+	-moz-animation: orbdown 49s linear infinite, sideWays 10s ease-in-out infinite alternate;
+	animation: orbdown 49s linear infinite, sideWays 10s ease-in-out infinite alternate;
 
 	left: 30%;
 	bottom: 50%;
@@ -254,9 +253,9 @@ body {
 }
 
 .x6 {
-    -webkit-animation: diagon 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: diagon 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: diagon 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -webkit-animation: diagon 21s linear infinite, sideWays 12s ease-in-out infinite alternate;
+	-moz-animation: diagon 21s linear infinite, sideWays 12s ease-in-out infinite alternate;
+	animation: diagon 21s linear infinite, sideWays 12s ease-in-out infinite alternate;
 
 	left: 50%;
 	bottom: 10%;
@@ -267,7 +266,7 @@ body {
 }
 
 .x7 {
-    -webkit-animation: sideorb 65s linear infinite;
+  -webkit-animation: sideorb 65s linear infinite;
 	-moz-animation: sideorb 65s linear infinite;
 	animation: sideorb 65s linear infinite;
 
@@ -280,7 +279,7 @@ body {
 }
 
 .x8 {
-    -webkit-animation: diagon 121s linear infinite alternate;
+  -webkit-animation: diagon 121s linear infinite alternate;
 	-moz-animation: diagon 121s linear infinite alternate;
 	animation: diagon 121s linear infinite alternate;
 
@@ -293,12 +292,12 @@ body {
 }
 
 .x9 {
-    -webkit-animation: orbup 59s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: orbup 59s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: orbup 59s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation: orbup 59s linear infinite, sideWays 14s ease-in-out infinite alternate;
+	-moz-animation: orbup 59s linear infinite, sideWays 14s ease-in-out infinite alternate;
+	animation: orbup 59s linear infinite, sideWays 14s ease-in-out infinite alternate;
 
-	left: 90%;
-	top: 50%;
+	left: 80%;
+	top: 20%;
 
 	-webkit-transform: scale(2.6);
 	-moz-transform: scale(2.6);
@@ -306,9 +305,9 @@ body {
 }
 
 .x10 {
-    -webkit-animation: orbdown 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: orbdown 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: orbdown 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -webkit-animation: orbdown 26s linear infinite, sideWays 8s ease-in-out infinite alternate;
+	-moz-animation: orbdown 26s linear infinite, sideWays 8s ease-in-out infinite alternate;
+	animation: orbdown 26s linear infinite, sideWays 8s ease-in-out infinite alternate;
 
 	left: 80%;
 	bottom: 80%;
@@ -333,31 +332,29 @@ transform: scale(0.8);
 }
 
 .x12 {
-    -webkit-animation: diagon 25s linear infinite;
-	-moz-animation: diagon 25s linear infinite;
-	animation: diagon 25s linear infinite;
+  -webkit-animation: diagon 25s linear infinite reverse;
+	-moz-animation: diagon 25s linear infinite reverse;
+	animation: diagon 25s linear infinite reverse;
 
 	left: 20%;
 	bottom: 20%;
 
-	-webkit-transform: scale(0.7);
-	-moz-transform: scale(0.7);
-	transform: scale(0.7);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 
-/* OBJECTS */
-
 .orbb {
-    -webkit-border-radius: 50%;
+  -webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 
-    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
 	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
 
-    height: 200px;
+  height: 200px;
 	position: absolute;
 	width: 200px;
 }
@@ -375,13 +372,14 @@ transform: scale(0.8);
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 
-    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
 	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
 
 	content: "";
-    height: 180px;
+  height: 180px;
 	left: 10px;
 	position: absolute;
 	width: 180px;
+}
 }
