@@ -9,6 +9,11 @@ body {
 	overflow-x: hidden;
 }
 
+a {
+	text-decoration: none;
+}
+
+
 #background-wrap {
   bottom: 0;
 	left: 0;
@@ -37,10 +42,15 @@ body {
   padding: 0.5em;
 }
 
-.explain p {
-  font-family: "Roboto";
-  font-size: 1em;
-  letter-spacing: 0.2em;
+.naujiena {
+	font-family: "Courgette";
+	letter-spacing: 0.1em;
+	font-size: 2em;
+}
+
+.explain a {
+	font-size: 1em;
+	color: #aaa;
 }
 
 /* KEYFRAMES */

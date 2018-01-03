@@ -1,0 +1,90 @@
+@import url("normalize.css");
+
+body {
+  box-sizing: border-box;
+  background-image: url("visuals/orbstill.jpg");
+  font-family: "Encode Sans Expanded";
+}
+
+.container {
+  min-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  height: 36px;
+  padding: 30px;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+  font-size: 22px;
+  padding: 5px;
+  font-family: "Encode Sans Expanded";
+}
+
+.back {
+  position: relative;
+  float: right;
+  font-family: "Roboto";
+  color: #aaa;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+p a {
+  color: grey;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.virselis {
+  float: left;
+  height: 320px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section {
+  padding: 30px;
+  background-color: rgba(240, 248, 255, 0.9);
+  margin-top: 12px;
+}
+
+section:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.griztiipradzia {
+  font-size: 0.75em;
+}
+
+.autoriausFoto {
+  height: 200px;
+  float: right;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.atsiliepimoautorius {
+  position: relative;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7em;
+  color: white;
+  letter-spacing: 0.05em;
+  padding: 30px;
+}
