@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>Orbs.lt</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lotus/lotus.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <script src="lotus/lotus.js" type="text/javascript"></script>
   </head>
   <body>
     <div id="background-wrap">
@@ -23,10 +25,29 @@
       <div class="orbb x12"></div>
     </div>
     <div class="explain">
-      <h1>ORBS LT</h1>
-      <p class="naujiena">Naujiena:<p>
-      <p><a href="laimingo-gyvenimo-raktas.html">Laimingo Gyvenimo Raktas</a></p>
+        <canvas id="laukelis" width="500" height = "500"></canvas>
+          <h1>ORBS LT</h1>
+          <p class="naujiena">Naujiena:<p>
+          <p id="lgr"><a href="laimingo-gyvenimo-raktas.html">Laimingo Gyvenimo Raktas</a></p>
     </div>
   </body>
+  <script type="text/javascript">
+    document.getElementById("lgr").addEventListener("mouseover", goldenize);
+    document.getElementById("lgr").addEventListener("mouseout", degoldenize);
+
+    function goldenize() {
+      var allorbs = document.getElementsByClassName("orbb");
+      for (var i = 0; i < allorbs.length; i++) {
+        allorbs[i].style.boxShadow = "0 20px 30px rgba(255, 215, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1)";
+      }
+    }
+    function degoldenize() {
+      var allorbs = document.getElementsByClassName("orbb");
+      for (var i = 0; i < allorbs.length; i++) {
+        allorbs[i].style.boxShadow = "0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1)";
+      }
+    }
+    lotusasPradzia();
+  </script>
 </html>
 </html>
