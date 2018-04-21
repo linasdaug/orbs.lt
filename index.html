@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117748678-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-117748678-1');
+    </script>
+
     <meta charset="utf-8">
     <title>Orbs.lt</title>
     <link rel="stylesheet" href="style.css">
@@ -27,9 +36,10 @@
     <div class="explain">
         <canvas id="laukelis" width="500" height = "500"></canvas>
           <h1>ORBS LT</h1>
-          <p class="naujiena">Naujiena:<p>
+          <p class="naujiena">Naujienos:<p>
           <p id="lgr"><a href="laimingo-gyvenimo-raktas.html">Laimingo Gyvenimo Raktas</a></p>
-    </div>
+          <p><a href="https://www.jogairajurveda.lt/">Žurnalas &bdquo;Joga ir ajurveda&ldquo;</a></p>
+      </div>
   </body>
   <script type="text/javascript">
     document.getElementById("lgr").addEventListener("mouseover", goldenize);
