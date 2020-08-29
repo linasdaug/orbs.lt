@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117748678-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-117748678-1');
-    </script>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117748678-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-117748678-1');
+        </script>
 
-    <meta charset="utf-8">
-    <title>Orbs.lt</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lotus/lotus.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-    <script src="lotus/lotus.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <div id="background-wrap">
-      <div class="orbb x1"></div>
-      <div class="orbb x2"></div>
-      <div class="orbb x3"></div>
-      <div class="orbb x4"></div>
-      <div class="orbb x5"></div>
-      <div class="orbb x6"></div>
-      <div class="orbb x7"></div>
-      <div class="orbb x8"></div>
-      <div class="orbb x9"></div>
-      <div class="orbb x10"></div>
-      <div class="orbb x11"></div>
-      <div class="orbb x12"></div>
-    </div>
-    <div class="explain">
-        <canvas id="laukelis" width="500" height = "500"></canvas>
-          <h1>ORBS LT</h1>
-          <p class="naujiena">Naujienos:<p>
-          <p><a href="https://www.jogairajurveda.lt/">Žurnalas &bdquo;Joga ir ajurveda&ldquo;</a></p>
-          <p><a href="https://www.perkuknyga.lt/lt/vaiku-literatura/geriau-sveikiau-kulinarine-zaidimu-knyga-visai-seimai.html">&bdquo;Geriau – sveikiau! Kulinarinė žaidimų knyga&ldquo;</a></p>
-          <p id="lgr"><a href="laimingo-gyvenimo-raktas.html">&bdquo;Laimingo Gyvenimo Raktas&ldquo;</a></p>
-      </div>
-  </body>
+        <meta charset="utf-8">
+        <title>Orbs.lt</title>
+        <script src="jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lotus/lotus.css">
+        <link rel="shortcut icon" type="image/png" href="visuals/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <script src="lotus/lotus.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="background-wrap">
+            <div class="orbb x1"></div>
+            <div class="orbb x2"></div>
+            <div class="orbb x3"></div>
+            <div class="orbb x4"></div>
+            <div class="orbb x5"></div>
+            <div class="orbb x6"></div>
+            <div class="orbb x7"></div>
+            <div class="orbb x8"></div>
+            <div class="orbb x9"></div>
+            <div class="orbb x10"></div>
+            <div class="orbb x11"></div>
+            <div class="orbb x12"></div>
+        </div>
+        <div class="explain">
+            <canvas id="lotus" width="400" height="320"></canvas>
+            <h1>ORBS LT</h1>
+            <p class="naujiena">Naujienos:<p>
+            <p><a href="https://www.jogairajurveda.lt/">Žurnalas ir portalas &bdquo;Joga ir ajurveda&ldquo;</a></p>
+            <p><a href="Nuostabus/mano-pasaulis-toks-nuostabus.html">Mano pasaulis toks nuotabus</a></p>
+            <p><a href="https://jogairajurveda.lt/naujiena/zurnalas-asveganas-nr-1-83">Žurnalas &bdquo;Aš veganas&ldquo;</a></p>
+            <p><a href="https://www.perkuknyga.lt/lt/vaiku-literatura/geriau-sveikiau-kulinarine-zaidimu-knyga-visai-seimai.html">Geriau – sveikiau! Kulinarinė žaidimų knyga</a></p>
+            <p id="lgr"><a href="laimingo-gyvenimo-raktas.html">Laimingo Gyvenimo Raktas</a></p>
+        </div>
+    </body>
   <script type="text/javascript">
     document.getElementById("lgr").addEventListener("mouseover", goldenize);
     document.getElementById("lgr").addEventListener("mouseout", degoldenize);
@@ -58,7 +62,15 @@
         allorbs[i].style.boxShadow = "0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1)";
       }
     }
-    lotusasPradzia();
+
+    // "lotus" initialised:
+    lotus();
+    $("#lotus").on("mouseover", function(){
+        lotusBliss();
+    });
+    $("#lotus").on("mouseout", function(){
+        lotusCalm();
+    });
   </script>
 </html>
 </html>

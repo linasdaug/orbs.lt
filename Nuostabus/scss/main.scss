@@ -1,0 +1,199 @@
+@import "variables";
+@import "mixins";
+
+@include google-font("Muli");
+@include google-font("Tangerine");
+@include google-font("Courgette");
+
+
+
+body {
+    background:transparent url('../img/tile1.jpg') left top repeat;
+}
+
+body,
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+a {
+
+    color: darken($text-color, 10%);
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: darken($text-color, 15%);
+        text-decoration: none;
+    }
+}
+
+section {
+    z-index: 0;
+
+    .section-content{
+        width: 100%;
+        margin: 50px auto;
+
+
+        .section-heading {
+            text-align: center;
+            padding: 30px;
+
+            h2 {
+                color: $text-color;
+                font-family: "Tangerine";
+                font-size: 48px;
+                text-shadow: 1px 1px;
+                span {
+                    font-size: 24px;
+                    font-style: italic;
+                }
+            }
+
+            .underline-img {
+                width: 20%;
+                min-width: 150px;
+            }
+
+        }
+
+        p {
+            @include paragraph-options;
+            span {
+                color: darken($text-color, 10%);
+            }
+        }
+
+        .img-wrapper {
+            text-align: center;
+
+            img {
+                width: 60%;
+                min-width: 270px;
+                max-width: 350px;
+                margin: 20px auto 10px auto;
+                box-shadow: $img-shadow;
+            }
+        }
+
+        .button-wrapper {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .button-lg {
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            border-radius: 2px;
+            transition: all 0.5s ease;
+
+            p {
+                background: transparent url("../img/rozyte6.png") bottom right no-repeat;
+                background-size: 57%;
+                padding: 15px 30px;
+
+                &:hover {
+                    background-color: $button-color-hover;
+                }
+            }
+        }
+
+        .card {
+            max-width: 400px;
+            margin-top: 15px;
+            box-shadow: $img-shadow;
+
+            .card-img-top {
+                height: 100%;
+            }
+
+            .card-body-heading {
+                position: relative;
+            }
+
+            h6 {
+                color: $text-color;
+                font-family: "Courgette";
+                font-size: $text-size * 2;
+                z-index: 1;
+            }
+
+            .card-body-decor {
+                position: absolute;
+                width: 40%;
+                right: -1em;
+                bottom: -2em;
+                z-index: 2;
+            }
+        }
+    }
+
+    .end-image-wrapper {
+        text-align: center;
+        margin-bottom: 60px;
+        .end-image {
+            width: 50%;
+            max-width: 200px;
+        };
+    }
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+    display: block;
+    overflow: hidden;
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    width: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+    transform: rotateY(180deg);
+}
+
+
+.juosta {
+    background:transparent url('../img/juosta3.png') left top;
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+}
+
+

@@ -32,14 +32,17 @@ a {
   text-align: center;
   color: #aaa;
   width: 25%;
-	min-width: 400px;
+	min-width: 450px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .explain h1 {
   font-family: "Roboto";
   font-size: 4em;
   border-bottom: 1px solid #aaa;
-  padding: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 10px;
 }
 
 .naujiena {

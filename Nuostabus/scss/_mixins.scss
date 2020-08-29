@@ -1,0 +1,21 @@
+@mixin google-font($font) {
+    $font: unquote($font);
+    @import url(https://fonts.googleapis.com/css?family=#{$font})
+}
+
+@mixin paragraph-options {
+	text-align: left;
+    color: lighten($text-color, 10%);
+    text-shadow: 1px 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .05);
+    transition: color 0.5s;
+    padding: 15px;
+    font-size: $text-size;
+    font-style: italic;
+    font-family: Muli;
+
+    &:hover {
+        color: darken($text-color, 10%);
+    }
+}
