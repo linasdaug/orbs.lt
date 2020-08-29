@@ -10,11 +10,10 @@
         gtag('js', new Date());
         gtag('config', 'UA-117748678-1');
     </script>
-
     <meta charset="utf-8">
-     <title>orbs.lt - Mano pasaulis toks nuostabus</title>
-     <link rel="shortcut icon" type="image/png" href="https://orbs.lt/visuals/favicon.ico"/>
-     <meta name="description" content="Moteriškumu, subtiliu aromatu dvelkianti užrašų knygelė dovanoja jaukų laiką sau ir pozityvių pokyčių galimybę. Atsiverkite vidinei išminčiai, skaitykite geras mintis, užrašykite savąsias. Kurkite, planuokite, svajokite. Tegul pasaulis būna nuostabus!">
+    <title>orbs.lt - Mano pasaulis toks nuostabus</title>
+    <link rel="shortcut icon" type="image/png" href="https://orbs.lt/visuals/favicon.ico"/>
+    <meta name="description" content="Moteriškumu, subtiliu aromatu dvelkianti užrašų knygelė dovanoja jaukų laiką sau ir pozityvių pokyčių galimybę. Atsiverkite vidinei išminčiai, skaitykite geras mintis, užrašykite savąsias. Kurkite, planuokite, svajokite. Tegul pasaulis būna nuostabus!">
     <meta property="og:url" content="https://www.orbs.lt/mano-pasaulis-toks-nuostabus.html" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Mano pasaulis toks nuostabus" />
@@ -22,23 +21,16 @@
     <meta property="og:image" content="https://orbs.lt/img/uzrasine.jpg"/>
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="400" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="css/main.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
-
     <script src="writer.js"></script>
-
 </head>
 <body onload="onLoad()">
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 col-md-10">
@@ -211,24 +203,19 @@
         </div>
     </div>
 </div>
-
 <script>
     var writer = new Writer();
-
     if (document.readyState === 'complete') {
         writer.init("p");
     } else {
         window.addEventListener('onload', writer.init("p"), false);
     }
-
 function onLoad() {
     for (let i = 1; i <= 5; i++) {
         let wd = document.getElementById("img" + i).clientHeight;
         document.getElementById("cont" + i).style.height = wd + "px";
     }
 }
-
-
 </script>
 </body>
 </html>
